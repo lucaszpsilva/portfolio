@@ -16,3 +16,22 @@ window.onload = ()=> {
         mobile_menu.classList.toggle('is-active');
     });
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let navLinks = document.querySelectorAll('nav a');
+  
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+  
+        let targetId = link.getAttribute('href').substring(1);
+  
+        
+        let targetElement = document.getElementById(targetId);
+  
+        
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  });

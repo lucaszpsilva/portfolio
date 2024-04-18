@@ -12,11 +12,11 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Habilidades</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Redes Sociais</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#redes">Redes Sociais</a></li>
             </ul>
         </nav>
          <button class="hamburguer">
@@ -26,15 +26,15 @@
     </header>
     <nav class="mobile-nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Projetos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
     </nav>
 <!-- SOBRE;HOME -->
-    <section class="apresentacao">
+    <section class="apresentacao" id="sobre">
         <div class="sobre">        
             <h1>Lucas Silva</h1><br>
-            <h2> → Front End Developer ←  </h2>
+            <h2 id="habilidades"> → Front End Developer ←  </h2>
             <p>Bem vindo(a) ao meu Portfólio! Meu nome é Lucas<br>
              e nessa página você encontrará mais sobre o que faço,<br>
              quais minhas habilidades e como entrar em contato comigo. </p>
@@ -43,38 +43,62 @@
             <img src="media/logoexample.png" alt="logo" >
         </div>
     </section>
-    <div class="habilidades">
-        <i class="fa-brands fa-html5 fa-2xl"></i>
-        <i class="fa-brands fa-css3-alt fa-2xl"></i>
-        <i class="fa-brands fa-js fa-2xl"></i>
-    </div>
-
-    <section class="projetos"><h3>PROJETOS</h3>
+    <div class="icons">
+        <div class="habilidades-slide">
+            <i class="fa-brands fa-html5 fa-2xl"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-php fa-2xl"></i>
+            <i class="fa-brands fa-react fa-2xl"></i>
+        </div>
+        <div class="habilidades-slide">
+            <i class="fa-brands fa-html5 fa-2xl"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-php fa-2xl"></i>
+            <i class="fa-brands fa-react fa-2xl"></i>
+        </div>
+        <div class="habilidades-slide">
+            <i class="fa-brands fa-html5 fa-2xl"></i>
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <i class="fa-brands fa-js fa-2xl"></i>
+            <i class="fa-brands fa-php fa-2xl"></i>
+            <i class="fa-brands fa-react fa-2xl"></i>
+        </div>
+    </div>  
+    <section class="projetos" id="projetos"><h3>PROJETOS</h3>
         <div class="container-center">
             <div class="lado-esquerdo">
-                <div class="img"></div>
-                <p class="texto-esquerda">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Obcaecati sequi ab ex minus non vero aperiam! Architecto error doloremque molestiae <br> id est ipsa sit sapiente, at voluptates eos maiores facilis hic possimus.</p>
+                <div class="img">
+                    <img src="media/skt.png" alt="kings">
+                    <h4>EM DESENVOLVIMENTO</h4>
+                </div>
+                <p class="texto-esquerda">SkinTalon é um site criado para vendas de skins de COUNTER-STRIKE.<br> O projeto se encontra em andamento necessitando-se apenas adicionar <br> as apis de login e de troca da steam para finalizar o projeto.</p>
             </div>
 
-            
             <div class="lado-direito">
-                <p class="texto-direita">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Obcaecati sequi ab ex minus non vero aperiam! Architecto error doloremque molestiae <br> id est ipsa sit sapiente, at voluptates eos maiores facilis hic possimus.</p>
-                <div class="img-oposto"></div>
+                <p class="texto-direita">King's Barber Shop é um projeto para uma barbearia<br> localizada na regiao de arujá(SP) que visa trazer novos clientes<br>  de maneira online e que eles possam marcar seus horários também pela internet.</p>
+                <div class="img-oposto"><img src="media/kingsimg.png" alt="kings"></div>
             </div>
+
             <div class="lado-esquerdo">
-                <div class="img"></div>
+                <div class="img">
+                    <h4>EM DESENVOLVIMENTO</h4>
+                </div>
                 <p class="texto-esquerda">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Obcaecati sequi ab ex minus non vero aperiam! Architecto error doloremque molestiae <br> id est ipsa sit sapiente, at voluptates eos maiores facilis hic possimus.</p>
             </div>
 
             
             <div class="lado-direito">
                 <p class="texto-direita">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Obcaecati sequi ab ex minus non vero aperiam! Architecto error doloremque molestiae <br> id est ipsa sit sapiente, at voluptates eos maiores facilis hic possimus.</p>
-                <div class="img-oposto"></div>
+                <div class="img-oposto">
+                    <h4>EM DESENVOLVIMENTO</h4>
+                </div>
             </div>
         </div>
     </section>
 <!-- REDES SOCIAIS -->
-    <section class="redes-sociais">
+    <section class="redes-sociais" id="redes">
         <p>Para entrar em contato diretamente em minhas redes sociais,<br> basta clicar no nome da rede que deseja o no seu ícone ou no icone: </p>
         <div class="bar"></div>
         <div class="redes">
@@ -84,7 +108,7 @@
         </section>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis velit vero pariatur ipsum delectus explicabo! Excepturi ex totam nisi cupiditate.</p>
+        <p>® 2024 - Desnevolvido por Lucas Silva</p>
 
 
     </footer>

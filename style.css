@@ -59,7 +59,7 @@ nav ul li:hover{
 
 /* SECTION1 - APRESENTAÇÃO */
 .apresentacao{
-  height: 480px;
+  height: 430px;
   width: 80%;
   margin: 0 auto;
   cursor: default;
@@ -132,18 +132,35 @@ nav ul li:hover{
   transform: scale(1.1);
 }
 /* HABILIDADES */
-.habilidades {
+.icons{
+  white-space: nowrap;
+  padding: 50px 0;
   width: 100%;
   background-color: #3bb2e9c0;
   height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  overflow: hidden;
 }
 
-.habilidades i{
-  margin-left: 23%;
+.habilidades-slide {
+  display: inline-block;
+  animation: 5s slide infinite linear;
 }
+
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-100%);
+  }
+}
+
+.habilidades-slide i{
+  margin: 0 140px;
+}
+
 
 
 
@@ -176,16 +193,33 @@ nav ul li:hover{
   justify-content: start;
   width: 100%;
   margin-top: 50px;
+  position: relative;
+
 
 
 }
 
+
+
 .img{
   display: flex;
-  width: 20%;
+  width: 300px;
   height: 400px;
   background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
 
+h4{
+  background-color: #1f1f1f;
+  height: 30px;
+  width: 500px;
+  transform: rotate(50deg);
+  position: absolute;
+  transform-origin: left top;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
 }
 
 .texto-esquerda{
@@ -194,6 +228,7 @@ nav ul li:hover{
   font-size: 1.2rem;
   width: 60%;
 }
+
 
 /* LADO DIREITO PROJETOS */
 
@@ -211,12 +246,18 @@ nav ul li:hover{
 .img-oposto{
   display: flex;
   justify-content: end;
-  width: 20%;
+  width: 300px;
   height: 400px;
   background-color: #000;
-
-
+  position: relative;
+  overflow: hidden;
 }
+
+
+.img-oposto img{
+  width: 100%;
+}
+
 
 .texto-direita{
   text-align: right;
