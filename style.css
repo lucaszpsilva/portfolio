@@ -128,7 +128,8 @@ nav ul li:hover{
 
 
 .sobre img:hover{
-  transition: 0.4s;
+  box-shadow: #1b1b1b -13px -8px;
+  transition: 0.9s;
   transform: scale(1.1);
 }
 /* HABILIDADES */
